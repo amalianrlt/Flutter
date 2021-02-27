@@ -17,17 +17,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Text Style'),),
+        appBar: AppBar(
+          title: Text('Text Style'),
+        ),
         body: Center(
-          child: Text('Ini text akuu', style: TextStyle(
-            fontFamily : 'Poppins', 
-            fontSize: 35, 
-            color: Colors.deepOrange,
-            decoration: TextDecoration.overline,
-            ),),
+          child: Text(
+            'Ini text akuu',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontSize: 35,
+              color: Colors.deepOrange,
+              decoration: TextDecoration.overline,
+            ),
           ),
+        ),
       ),
     );
   }
 }
-

@@ -21,23 +21,23 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Anonymous Method'),),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children : <Widget>[
-              Text(tombol),
-              RaisedButton(
-                child: Text('Tekan Saya'), 
-                onPressed: (){
-                  setState(() {
-                    tombol = 'Tombol sudah ditekan';
-                  });
-                })
-            ]
+          appBar: AppBar(
+            title: Text('Anonymous Method'),
           ),
-        )
-      ),
+          body: Center(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(tombol),
+                  RaisedButton(
+                      child: Text('Tekan Saya'),
+                      onPressed: () {
+                        setState(() {
+                          tombol = 'Tombol sudah ditekan';
+                        });
+                      })
+                ]),
+          )),
     );
   }
 }
